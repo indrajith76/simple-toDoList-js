@@ -67,4 +67,7 @@ document.getElementById('input-btn').addEventListener('click',function(){
     inputList.value = '';
 });
 
-
+// code of clear all button
+function allClear(){
+    document.getElementById('list-ul').innerHTML = '';
+}
