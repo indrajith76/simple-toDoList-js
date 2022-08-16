@@ -36,7 +36,24 @@ document.getElementById('bg-btn').addEventListener('click',function(){
     inputBtn.style.background='#08306b';
     inputBtn.style.borderColor = '#595b5c';
     inputBtn.style.color = '#c5c5c5';
+
+    // code for clear all button
+    const clearBtn = document.getElementById('clear-all');
+    clearBtn.style.backgroundColor='#7b010d';
+    clearBtn.style.borderColor = '#2c2a2a00';
+    clearBtn.style.color = '#b1b1b1';
+});
+
+// code of input field validation
+document.getElementById('input-list').addEventListener('keyup', function(event){
+    if(event.target.value !== ''){
+        document.getElementById('input-btn').removeAttribute('disabled');
+    }
+    else{
+        document.getElementById('input-btn').setAttribute('disabled', true);
+    }
 })
+
 
 /*--------------------------------
     code for remove list item 
