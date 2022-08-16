@@ -26,6 +26,7 @@ document.getElementById('bg-btn').addEventListener('click',function(){
     const inputList = document.getElementById('input-list');
     inputList.style.backgroundColor = '#041a3b';
     inputList.style.borderColor = '#545454';
+    inputList.style.color = '#b1b1b1';
     // code of top h1
     const topH1 = document.getElementById('top-h1');
     topH1.classList = '';
